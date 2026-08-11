@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html class="h-full bg-gray-100">
+    <head>
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="./output.css" rel="stylesheet" />
+        <style type="text/tailwindcss">
+            @theme {
+                --font-sans: InterVariable, sans-serif;
+            }
+        </style>
+    </head>
+    <body class="h-full">
+        
+        <div class="flex min-h-full flex-col">
+            <header class="absolute inset-x-0 top-0 z-50  border-b border-gray-200">
+                <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+                    <div class="flex lg:flex-1">
+                        <a href="#" class="-m-1.5 p-1.5">
+                            <span class="sr-only">Lincolnshire Brick</span>
+                            <img class="h-8 w-auto fill-amber-700" src="images/brick-logo.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="flex lg:hidden">
+                        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="hidden lg:flex lg:gap-x-12">
+                        <a href="#" class="text-sm/6 font-semibold text-gray-900">Brickyards</a>
+                        <a href="#" class="text-sm/6 font-semibold text-gray-900">Brickmakers</a>
+                        <a href="#" class="text-sm/6 font-semibold text-gray-900">Buildings</a>
+                        <a href="#" class="text-sm/6 font-semibold text-gray-900">Media Library</a>
+                        <a href="#" class="text-sm/6 font-semibold text-gray-900">Machinery</a>
+                        <a href="#" class="text-sm/6 font-semibold text-gray-900">Documents</a>
+                    </div>
+                    <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                        <!-- Mini search -->
+                    </div>
+                </nav>
+                <!-- Mobile menu, show/hide based on menu open state. -->
+                <div class="lg:hidden" role="dialog" aria-modal="true">
+                    <!-- Background backdrop, show/hide based on slide-over state. -->
+                    <div class="fixed inset-0 z-50"></div>
+                    <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                        <div class="flex items-center justify-between">
+                            <a href="#" class="-m-1.5 p-1.5">
+                                <span class="sr-only">Your Company</span>
+                                <img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+                            </a>
+                            <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                                <span class="sr-only">Close menu</span>
+                                <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="mt-6 flow-root">
+                            <div class="-my-6 divide-y divide-gray-500/10">
+                                <div class="space-y-2 py-6">
+                                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Product</a>
+                                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Features</a>
+                                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Resources</a>
+                                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Company</a>
+                                </div>
+                                <div class="py-6">
+                                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log in</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+          
+            <div class="mx-auto flex w-full max-w-7xl items-start gap-x-8 px-4 py-10 sm:px-6 lg:px-8 mt-10">
+              <aside class="sticky top-8 hidden w-60 shrink-0 lg:block
+               overflow-y-auto border-r border-gray-200 px-4 py-6 pt-0 sm:px-6 lg:px-8 lg:pl-0 lg:pt-0 xl:block
+               max-h-[calc(100vh_-_98px)] border-b-[#ddd] border-b border-solid 
+              ">
+                <!-- Left column area -->
+                 
+                <nav class="h-full" aria-label="Directory">
+                  <div class="relative">
+                    <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+                      <h3>Alford</h3>
+                    </div>
+                    <ul role="list" class="divide-y divide-gray-100">  
+                      <li class="flex gap-x-4 px-3 py-2">
+                        <div class="min-w-0">
+                          <p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p>
+                        </div>
+                      </li>
+                      <li class="flex gap-x-4 px-3 py-2">
+                        <div class="min-w-0">
+                          <p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p>
+                        </div>
+                      </li>
+                        <li class="flex gap-x-4 px-3 py-2">
+                        <div class="min-w-0">
+                          <p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <div class="relative">
+                    <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+                      <h3>Bardney</h3>
+                    </div>
+                    <ul role="list" class="divide-y divide-gray-100">
+                      <li class="flex gap-x-4 px-3 py-2">
+                        <div class="min-w-0">
+                          <p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p>
+                        </div>
+                      </li>
+                      <li class="flex gap-x-4 px-3 py-2">
+                        <div class="min-w-0">
+                          <p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p>
+                        </div>
+                      </li>
+                        <li class="flex gap-x-4 px-3 py-2">
+                        <div class="min-w-0">
+                          <p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Barrow Haven</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Barrow on Humber</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Barton-upon-Humber</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Bassingham</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Boston</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Bourne</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Brigg</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Burton upon Stather</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Caistor</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Cleethorpes</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Crowle</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>East Halton</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>East Theddlethorpe</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Faldingworth</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Fen</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Gainsborough</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Gosberton</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Goxhill</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Grantham</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Great Gonerby</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Grimsby</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Havenside</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Holbeach</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Horncastle</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Hull</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Killingholme</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Lincoln</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Waddington</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3><a class="hover:underline" href="town-detail.html">Louth</a></h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900"><a href="brickyard-detail.html" class="hover:underline">Donington on Bain</a></p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Mablethorpe</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Manton</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Market Rasen</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>New Holland</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Skegness</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Sleaford</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>South Ferriby</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>South Killingholme</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Spalding</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Spilsby</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Stamford</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Stragglethorpe</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Thoresby</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Thorpe</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Ulceby</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Welton</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+
+
+<div class="relative">
+  <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+    <h3>Wisbech</h3>
+  </div>
+  <ul role="list" class="divide-y divide-gray-100">
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+    <li class="flex gap-x-4 px-3 py-2"><div class="min-w-0"><p class="text-sm/6 font-semibold text-gray-900">Brickyard Name</p></div></li>
+  </ul>
+</div>
+                </nav>
+                
+                  
+
+              </aside>
+          
+              <main class="flex-1 px-4 py-6 sm:px-6 lg:px-8 lg:pl-0">
+                <!-- Main area -->
+                  <div class=" py-12 sm:py-10">
+                    <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+                      <p class="mt-2 max-w-lg text-4xl font-semibold tracking-tight text-pretty text-gray-950 sm:text-5xl">All Brickyards</p>
+
+                      
+                      <div class="grid grid-cols-1 gap-2">
+           	
+	
+	
+	
+
+                        <div class="px-4">
+                          <div class="mt-0 flow-root">
+                            <div class="-mx-4 -my-2 sm:-mx-6 lg:-mx-8">
+                              <div class="inline-block min-w-full py-2 align-middle mt-10">
+                                <table class="min-w-full divide-y divide-gray-300">
+                                  <thead>
+                                    <tr>
+                                      <th scope="col" class="py-3.5 pr-3 pl-4 text-left text-sm font-semibold text-gray-900 sm:pl-3">Town</th>
+                                      <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Brickyard Name</th>
+                                      <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Year From</th>
+                                      <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Year To</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody class="bg-white">
+                                    <tr class="even:bg-gray-50">
+                                      <td class="py-4 pr-3 pl-4 text-sm font-medium whitespace-nowrap text-gray-900 sm:pl-3"><a href="brickyard-detail.html">Donington on Bain</a></td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500"></td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1800</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1880</td>
+                                    </tr>
+                                    <tr class="even:bg-gray-50">
+                                      <td class="py-4 pr-3 pl-4 text-sm font-medium whitespace-nowrap text-gray-900 sm:pl-3">Kirton in Lindsey</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">Station Brickyard</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1801</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1880</td>
+                                    </tr>            <tr class="even:bg-gray-50">
+                                      <td class="py-4 pr-3 pl-4 text-sm font-medium whitespace-nowrap text-gray-900 sm:pl-3">Laceby</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500"></td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1800</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1880</td>
+                                    </tr>            <tr class="even:bg-gray-50">
+                                      <td class="py-4 pr-3 pl-4 text-sm font-medium whitespace-nowrap text-gray-900 sm:pl-3">Langworth</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500"></td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1850</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1860</td>
+                                    </tr>            <tr class="even:bg-gray-50">
+                                      <td class="py-4 pr-3 pl-4 text-sm font-medium whitespace-nowrap text-gray-900 sm:pl-3">Aswarby</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">No.2 Yard</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1830</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1835</td>
+                                    </tr>            <tr class="even:bg-gray-50">
+                                      <td class="py-4 pr-3 pl-4 text-sm font-medium whitespace-nowrap text-gray-900 sm:pl-3">Leverton</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">Station Brickyard</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1823</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1890</td>
+                                    </tr>            <tr class="even:bg-gray-50">
+                                      <td class="py-4 pr-3 pl-4 text-sm font-medium whitespace-nowrap text-gray-900 sm:pl-3">Frithville</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">Cowbridge</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1800</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1910</td>
+                                    </tr>            <tr class="even:bg-gray-50">
+                                      <td class="py-4 pr-3 pl-4 text-sm font-medium whitespace-nowrap text-gray-900 sm:pl-3">Little Humby	</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500"></td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1848</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1901</td>
+                                    </tr>
+                                    <tr class="even:bg-gray-50">
+                                      <td class="py-4 pr-3 pl-4 text-sm font-medium whitespace-nowrap text-gray-900 sm:pl-3"><a href="brickyard-detail.html">Donington on Bain</a></td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500"></td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1800</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1880</td>
+                                    </tr>
+                                    <tr class="even:bg-gray-50">
+                                      <td class="py-4 pr-3 pl-4 text-sm font-medium whitespace-nowrap text-gray-900 sm:pl-3">Kirton in Lindsey</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">Station Brickyard</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1801</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1880</td>
+                                    </tr>            <tr class="even:bg-gray-50">
+                                      <td class="py-4 pr-3 pl-4 text-sm font-medium whitespace-nowrap text-gray-900 sm:pl-3">Laceby</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500"></td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1800</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1880</td>
+                                    </tr>            <tr class="even:bg-gray-50">
+                                      <td class="py-4 pr-3 pl-4 text-sm font-medium whitespace-nowrap text-gray-900 sm:pl-3">Langworth</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500"></td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1850</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1860</td>
+                                    </tr>            <tr class="even:bg-gray-50">
+                                      <td class="py-4 pr-3 pl-4 text-sm font-medium whitespace-nowrap text-gray-900 sm:pl-3">Aswarby</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">No.2 Yard</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1830</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1835</td>
+                                    </tr>            <tr class="even:bg-gray-50">
+                                      <td class="py-4 pr-3 pl-4 text-sm font-medium whitespace-nowrap text-gray-900 sm:pl-3">Leverton</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">Station Brickyard</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1823</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1890</td>
+                                    </tr>            <tr class="even:bg-gray-50">
+                                      <td class="py-4 pr-3 pl-4 text-sm font-medium whitespace-nowrap text-gray-900 sm:pl-3">Frithville</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">Cowbridge</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1800</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1910</td>
+                                    </tr>            <tr class="even:bg-gray-50">
+                                      <td class="py-4 pr-3 pl-4 text-sm font-medium whitespace-nowrap text-gray-900 sm:pl-3">Little Humby	</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500"></td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1848</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1901</td>
+                                    </tr>
+                                    <tr class="even:bg-gray-50">
+                                      <td class="py-4 pr-3 pl-4 text-sm font-medium whitespace-nowrap text-gray-900 sm:pl-3"><a href="brickyard-detail.html">Donington on Bain</a></td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500"></td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1800</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1880</td>
+                                    </tr>
+                                    <tr class="even:bg-gray-50">
+                                      <td class="py-4 pr-3 pl-4 text-sm font-medium whitespace-nowrap text-gray-900 sm:pl-3">Kirton in Lindsey</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">Station Brickyard</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1801</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1880</td>
+                                    </tr>            <tr class="even:bg-gray-50">
+                                      <td class="py-4 pr-3 pl-4 text-sm font-medium whitespace-nowrap text-gray-900 sm:pl-3">Laceby</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500"></td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1800</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1880</td>
+                                    </tr>            <tr class="even:bg-gray-50">
+                                      <td class="py-4 pr-3 pl-4 text-sm font-medium whitespace-nowrap text-gray-900 sm:pl-3">Langworth</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500"></td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1850</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1860</td>
+                                    </tr>            <tr class="even:bg-gray-50">
+                                      <td class="py-4 pr-3 pl-4 text-sm font-medium whitespace-nowrap text-gray-900 sm:pl-3">Aswarby</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">No.2 Yard</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1830</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1835</td>
+                                    </tr>            <tr class="even:bg-gray-50">
+                                      <td class="py-4 pr-3 pl-4 text-sm font-medium whitespace-nowrap text-gray-900 sm:pl-3">Leverton</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">Station Brickyard</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1823</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1890</td>
+                                    </tr>            <tr class="even:bg-gray-50">
+                                      <td class="py-4 pr-3 pl-4 text-sm font-medium whitespace-nowrap text-gray-900 sm:pl-3">Frithville</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">Cowbridge</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1800</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1910</td>
+                                    </tr>            <tr class="even:bg-gray-50">
+                                      <td class="py-4 pr-3 pl-4 text-sm font-medium whitespace-nowrap text-gray-900 sm:pl-3">Little Humby	</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500"></td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1848</td>
+                                      <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">1901</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        
+                        
+                              </div>
+
+                      
+
+                    </div>
+                  </div>
+                  
+                  
+                
+
+              </main>
+        
+            </div>
+          </div>
+          
+
+
+            <!-- Footer -->
+            <footer class="mt-16 sm:mt-32">
+                <div class="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
+                    <nav class="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm/6" aria-label="Footer">
+                        <a href="#" class="text-gray-600 hover:text-gray-900">About</a>
+                        <a href="#" class="text-gray-600 hover:text-gray-900">Accessibility</a>
+                        <a href="#" class="text-gray-600 hover:text-gray-900">Links</a>
+                    </nav>
+                    <p class="mt-20 mb-0 text-center text-sm/6 text-gray-600">&copy; Lincolnshire Brick. All rights reserved.</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

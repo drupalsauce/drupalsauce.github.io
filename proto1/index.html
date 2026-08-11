@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="./output.css" rel="stylesheet" />
+        <style type="text/tailwindcss">
+            @theme {
+                --font-sans: InterVariable, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bg-white">
+            <!-- Header -->
+            <header class="absolute inset-x-0 top-0 z-50">
+                <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+                    <div class="flex lg:flex-1">
+                        <a href="#" class="-m-1.5 p-1.5">
+                            <span class="sr-only">Lincolnshire Brick</span>
+                            <img class="h-8 w-auto fill-amber-700" src="images/brick-logo.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="flex lg:hidden">
+                        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="hidden lg:flex lg:gap-x-12">
+                        <a href="brickyards.html" class="text-sm/6 font-semibold text-gray-900">Brickyards</a>
+                        <a href="brickmakers.html" class="text-sm/6 font-semibold text-gray-900">Brickmakers</a>
+                        <a href="#" class="text-sm/6 font-semibold text-gray-900">Buildings</a>
+                        <a href="#" class="text-sm/6 font-semibold text-gray-900">Media Library</a>
+                        <a href="#" class="text-sm/6 font-semibold text-gray-900">Machinery</a>
+                        <a href="#" class="text-sm/6 font-semibold text-gray-900">Documents</a>
+                    </div>
+                    <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                        <!-- Mini search -->
+                    </div>
+                </nav>
+                <!-- Mobile menu, show/hide based on menu open state. -->
+                <div class="lg:hidden" role="dialog" aria-modal="true">
+                    <!-- Background backdrop, show/hide based on slide-over state. -->
+                    <div class="fixed inset-0 z-50"></div>
+                    <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                        <div class="flex items-center justify-between">
+                            <a href="#" class="-m-1.5 p-1.5">
+                                <span class="sr-only">Your Company</span>
+                                <img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+                            </a>
+                            <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                                <span class="sr-only">Close menu</span>
+                                <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="mt-6 flow-root">
+                            <div class="-my-6 divide-y divide-gray-500/10">
+                                <div class="space-y-2 py-6">
+                                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Product</a>
+                                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Features</a>
+                                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Resources</a>
+                                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Company</a>
+                                </div>
+                                <div class="py-6">
+                                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log in</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main class="isolate">
+                <!-- Hero section -->
+                <div class="relative isolate -z-10">
+                    <div class="absolute top-0 right-0 left-1/2 -z-10 -ml-24 transform-gpu overflow-hidden blur-3xl lg:ml-24 xl:ml-48" aria-hidden="true">
+                        <div
+                            class="aspect-801/1036 w-[50.0625rem] bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
+                            style="
+                                clip-path: polygon(
+                                    63.1% 29.5%,
+                                    100% 17.1%,
+                                    76.6% 3%,
+                                    48.4% 0%,
+                                    44.6% 4.7%,
+                                    54.5% 25.3%,
+                                    59.8% 49%,
+                                    55.2% 57.8%,
+                                    44.4% 57.2%,
+                                    27.8% 47.9%,
+                                    35.1% 81.5%,
+                                    0% 97.7%,
+                                    39.2% 100%,
+                                    35.2% 81.4%,
+                                    97.2% 52.8%,
+                                    63.1% 29.5%
+                                );
+                            "
+                        ></div>
+                    </div>
+                    <div class="overflow-hidden">
+                        <div class="mx-auto max-w-7xl px-6 pt-36 pb-32 sm:pt-60 lg:px-8 lg:pt-32">
+                            <div class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
+                                <div class="relative w-full lg:max-w-xl lg:shrink-0 xl:max-w-2xl">
+                                    <h1 class="text-5xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-7xl">Welcome to Lincolnshire Brick</h1>
+                                    <p class="mt-8 text-lg font-medium text-pretty text-gray-500 sm:max-w-md sm:text-xl/8 lg:max-w-none">
+                                        This is a comprehensive website covering the topics of brickmaking and makers in Lincolnshire. Agna ipsum sint dolor qui. Sunt sit in quis cupidatat mollit aute
+                                        velit. Et labore commodo nulla aliqua proident mollit ullamco exercitation tempor. Sint aliqua id pariatur in voluptate cillum. Eu voluptate tempor esse minim
+                                        amet fugiat veniam occaecat aliqua.
+                                    </p>
+                                </div>
+                                <div class="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
+                                    <div class="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
+                                        <div class="relative">
+                                            <img src="images/photos/8.jpg" alt="" class="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" />
+                                            <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
+                                        <div class="relative">
+                                            <img src="images/photos/1.png" alt="" class="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" />
+                                            <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset"></div>
+                                        </div>
+                                        <div class="relative">
+                                            <img src="images/photos/2.jpg" alt="" class="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" />
+                                            <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset"></div>
+                                        </div>
+                                    </div>
+                                    <div class="w-44 flex-none space-y-8 pt-32 sm:pt-0">
+                                        <div class="relative">
+                                            <img src="images/photos/3.jpg" alt="" class="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" />
+                                            <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset"></div>
+                                        </div>
+                                        <div class="relative">
+                                            <img src="images/photos/4.jpg" alt="" class="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" />
+                                            <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content section -->
+                <div class="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8">
+                    <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
+                        <h2 class="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">About this website</h2>
+                        <div class="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
+                            <div class="lg:w-full lg:max-w-2xl lg:flex-auto">
+                                <p class="text-xl/8 text-gray-600">
+                                    Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas ac. Diam
+                                    nulla orci at in viverra scelerisque eget. Eleifend egestas fringilla sapien.
+                                </p>
+                                <p class="mt-10 max-w-xl text-base/7 text-gray-700">
+                                    Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio
+                                    penatibus risus viverra tellus varius sit neque erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet
+                                    vitae sed turpis id.
+                                </p>
+                            </div>
+                            <div class="lg:flex lg:flex-auto lg:justify-center">
+                                <dl class="w-64 space-y-8 xl:w-80">
+                                    <div class="flex flex-col-reverse gap-y-4">
+                                        <dt class="text-base/7 text-gray-600">Number of records</dt>
+                                        <dd class="text-5xl font-semibold tracking-tight text-gray-900">3,264</dd>
+                                    </div>
+                                    <div class="flex flex-col-reverse gap-y-4">
+                                        <dt class="text-base/7 text-gray-600">Years of brickmaking covered</dt>
+                                        <dd class="text-5xl font-semibold tracking-tight text-gray-900">120</dd>
+                                    </div>
+                                    <div class="flex flex-col-reverse gap-y-4">
+                                        <dt class="text-base/7 text-gray-600">Photos &amp; advertisements</dt>
+                                        <dd class="text-5xl font-semibold tracking-tight text-gray-900">532</dd>
+                                    </div>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image section -->
+                <div class="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
+                    <img src="images/photos/5.jpg" alt="" class="aspect-5/2 w-full object-cover xl:rounded-3xl" />
+                </div>
+
+                <!-- Search section -->
+                <div class="mx-auto mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:mt-8">
+                    <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
+                        <h2 class="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">Search for a brickmaker</h2>
+                        <div class="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
+                            <div class="flex flex-col text-sans">
+                                <div class="gap-2 text-left flex flex-col py-6 pb-1 lg:hidden text-dark-blue">
+                                    <p>Select a record type</p>
+                                    <select class="p-2 border-dark-blue border-2 rounded select-arrow">
+                                        <option value="1921 Census">1921 Census</option>
+                                        <option value="1939 Register">1939 Register</option>
+                                        <option value="Military, armed forces and conflict">Military, armed forces and conflict</option>
+                                        <option value="Birth, marriage, death and parish">Birth, marriage, death and parish</option>
+                                        <option value="Institution and organisation">Institution and organisation</option>
+                                        <option value="Travel and migration">Travel and migration</option>
+                                    </select>
+                                </div>
+                                <div class="w-full justify-self-center lg:justify-self-start">
+                                    <div class="pt-5">
+                                        <form class="grid grid-cols-1 gap-2 md:flex md:flex-col">
+                                            <div class="flex flex-col lg:flex-row gap-2 lg:items-end">
+                                                <div class="flex flex-col gap-2">
+                                                    <p class="font-semibold">Personal details</p>
+                                                    <label for="recordSearchFormFirstName">First name</label
+                                                    ><input
+                                                        class="rounded-box border p-2 mb-1 w-full border-gray-200 text-dark-blue"
+                                                        id="recordSearchFormFirstName"
+                                                        placeholder="John"
+                                                        type="text"
+                                                        name="firstName"
+                                                    />
+                                                </div>
+                                                <div class="flex flex-col gap-2">
+                                                    <label for="recordSearchFormLastName">Last name</label
+                                                    ><input
+                                                        class="rounded-box border p-2 mb-1 w-full border-gray-200 text-dark-blue"
+                                                        id="recordSearchFormLastName"
+                                                        placeholder="Smith"
+                                                        type="text"
+                                                        name="lastName"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-col lg:flex-row gap-2">
+                                                <div class="flex flex-col gap-2">
+                                                    <label class="font-semibold">Time period</label
+                                                    ><select class="rounded-box border p-2 w-full text-dark-blue select-arrow" id="yearType" name="yearType" required="">
+                                                        <option value="born" selected="">Born</option>
+                                                        <option value="died">Died</option>
+                                                        <option value="other">Other</option>
+                                                    </select>
+                                                </div>
+                                                <div class="flex flex-row lg:items-end gap-3">
+                                                    <input
+                                                        class="rounded-box border p-2 w-20 max-h-fit min-h-10 text-dark-blue border-grey-200"
+                                                        id="recordSearchFormYear"
+                                                        placeholder="YYYY"
+                                                        type="number"
+                                                        name="eventYear"
+                                                    /><select class="rounded-box border p-2 w-full h-fit text-dark-blue select-arrow" id="yearInputOffset" name="yearInputOffset" required="">
+                                                        <option value="0">± 0yrs</option>
+                                                        <option value="1">± 1yrs</option>
+                                                        <option value="2" selected="">± 2yrs</option>
+                                                        <option value="5">± 5yrs</option>
+                                                        <option value="10">± 10yrs</option>
+                                                        <option value="20">± 20yrs</option>
+                                                        <option value="40">± 40yrs</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-col lg:flex-row lg:items-end gap-2">
+                                                <div class="flex flex-col gap-2">
+                                                    <label class="font-semibold">Known location</label
+                                                    ><select class="text-dark-blue border p-2 w-full border-gray-200 rounded-box lg:w-fit select-arrow" id="region-select" name="region" required="">
+                                                        <option value="">Not known</option>
+                                                        <option>Alford</option>
+                                                        <option>Bardney</option>
+                                                        <option>Barrow Haven</option>
+                                                        <option>Barrow on Humber</option>
+                                                        <option>Barton-upon-Humber</option>
+                                                        <option>Bassingham</option>
+                                                        <option>Boston</option>
+                                                        <option>Bourne</option>
+                                                        <option>Brigg</option>
+                                                        <option>Burton upon Stather</option>
+                                                        <option>Caistor</option>
+                                                        <option>Cleethorpes</option>
+                                                        <option>Crowle</option>
+                                                        <option>East Halton</option>
+                                                        <option>East Theddlethorpe</option>
+                                                        <option>Faldingworth</option>
+                                                        <option>Fen</option>
+                                                        <option>Gainsborough</option>
+                                                        <option>Gosberton</option>
+                                                        <option>Goxhill</option>
+                                                        <option>Grantham</option>
+                                                        <option>Great Gonerby</option>
+                                                        <option>Grimsby</option>
+                                                        <option>Havenside</option>
+                                                        <option>Holbeach</option>
+                                                        <option>Horncastle</option>
+                                                        <option>Hull</option>
+                                                        <option>Killingholme</option>
+                                                        <option>Lincoln</option>
+                                                        <option>Louth</option>
+                                                        <option>Mablethorpe</option>
+                                                        <option>Manton</option>
+                                                        <option>Market Rasen</option>
+                                                        <option>New Holland</option>
+                                                        <option>Skegness</option>
+                                                        <option>Sleaford</option>
+                                                        <option>South Ferriby</option>
+                                                        <option>South Killingholme</option>
+                                                        <option>Spalding</option>
+                                                        <option>Spilsby</option>
+                                                        <option>Stamford</option>
+                                                        <option>Stragglethorpe</option>
+                                                        <option>Thoresby</option>
+                                                        <option>Thorpe</option>
+                                                        <option>Ulceby</option>
+                                                        <option>Welton</option>
+                                                        <option>Wisbech</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="max-w-3xl mt-4 md:m-0">
+                                                <label class="hidden md:block">&nbsp;</label
+                                                ><button
+                                                    class="rounded-md bg-red-800 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+                                                    type="submit"
+                                                >
+                                                    Search
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lg:flex lg:flex-auto lg:justify-center">
+                                <p>If you don't know the full information, just enter the details you do know.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Browse section -->
+                <div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
+                    <div class="mx-auto max-w-2xl lg:mx-0">
+                        <h2 class="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">Browse</h2>
+                        <p class="mt-6 text-lg/8 text-gray-600">If you want to simply browse the website please choose one of the options below.</p>
+                    </div>
+
+                    <div class="mx-auto mt-12 max-w-2xl sm:mt-20 lg:mt-12 lg:max-w-none">
+                        <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+                            <div class="flex flex-col">
+                                <dt class="text-base/7 font-semibold text-gray-900">
+                                    <div class="mb-6 flex size-10 items-center justify-center rounded-lg bg-red-800">
+                                        <svg class="size-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"></path>
+                                        </svg>
+                                    </div>
+                                    Brickyards
+                                </dt>
+                                <dd class="mt-1 flex flex-auto flex-col text-base/7 text-gray-900">
+                                    <p class="flex-auto">Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.</p>
+                                    <p class="mt-6">
+                                        <a href="#" class="text-sm/6 font-semibold text-red-800">Learn more <span aria-hidden="true">→</span></a>
+                                    </p>
+                                </dd>
+                            </div>
+                            <div class="flex flex-col">
+                                <dt class="text-base/7 font-semibold text-gray-900">
+                                    <div class="mb-6 flex size-10 items-center justify-center rounded-lg bg-red-800">
+                                        <svg class="size-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"
+                                            ></path>
+                                        </svg>
+                                    </div>
+                                    Buildings
+                                </dt>
+                                <dd class="mt-1 flex flex-auto flex-col text-base/7 text-gray-900">
+                                    <p class="flex-auto">
+                                        Vero eum voluptatem aliquid nostrum voluptatem. Vitae esse natus. Earum nihil deserunt eos quasi cupiditate. A inventore et molestiae natus.
+                                    </p>
+                                    <p class="mt-6">
+                                        <a href="#" class="text-sm/6 font-semibold text-red-800">Learn more <span aria-hidden="true">→</span></a>
+                                    </p>
+                                </dd>
+                            </div>
+                            <div class="flex flex-col">
+                                <dt class="text-base/7 font-semibold text-gray-900">
+                                    <div class="mb-6 flex size-10 items-center justify-center rounded-lg bg-red-800">
+                                        <svg class="size-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+                                            ></path>
+                                        </svg>
+                                    </div>
+                                    Machinery
+                                </dt>
+                                <dd class="mt-1 flex flex-auto flex-col text-base/7 text-gray-900">
+                                    <p class="flex-auto">
+                                        Et quod quaerat dolorem quaerat architecto aliquam accusantium. Ex adipisci et doloremque autem quia quam. Quis eos molestiae at iure impedit.
+                                    </p>
+                                    <p class="mt-6">
+                                        <a href="#" class="text-sm/6 font-semibold text-red-800">Learn more <span aria-hidden="true">→</span></a>
+                                    </p>
+                                </dd>
+                            </div>
+                        </dl>
+                    </div>
+                    <div class="mx-auto mt-12 max-w-2xl sm:mt-20 lg:mt-12 lg:max-w-none">
+                        <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+                            <div class="flex flex-col">
+                                <dt class="text-base/7 font-semibold text-gray-900">
+                                    <div class="mb-6 flex size-10 items-center justify-center rounded-lg bg-red-800">
+                                        <svg class="size-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"></path>
+                                        </svg>
+                                    </div>
+                                    Photographs
+                                </dt>
+                                <dd class="mt-1 flex flex-auto flex-col text-base/7 text-gray-900">
+                                    <p class="flex-auto">Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.</p>
+                                    <p class="mt-6">
+                                        <a href="#" class="text-sm/6 font-semibold text-red-800">Learn more <span aria-hidden="true">→</span></a>
+                                    </p>
+                                </dd>
+                            </div>
+                            <div class="flex flex-col">
+                                <dt class="text-base/7 font-semibold text-gray-900">
+                                    <div class="mb-6 flex size-10 items-center justify-center rounded-lg bg-red-800">
+                                        <svg class="size-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"
+                                            ></path>
+                                        </svg>
+                                    </div>
+                                    Adverts
+                                </dt>
+                                <dd class="mt-1 flex flex-auto flex-col text-base/7 text-gray-900">
+                                    <p class="flex-auto">
+                                        Vero eum voluptatem aliquid nostrum voluptatem. Vitae esse natus. Earum nihil deserunt eos quasi cupiditate. A inventore et molestiae natus.
+                                    </p>
+                                    <p class="mt-6">
+                                        <a href="#" class="text-sm/6 font-semibold text-red-800">Learn more <span aria-hidden="true">→</span></a>
+                                    </p>
+                                </dd>
+                            </div>
+                            <div class="flex flex-col">
+                                <dt class="text-base/7 font-semibold text-gray-900">
+                                    <div class="mb-6 flex size-10 items-center justify-center rounded-lg bg-red-800">
+                                        <svg class="size-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+                                            ></path>
+                                        </svg>
+                                    </div>
+                                    Documents
+                                </dt>
+                                <dd class="mt-1 flex flex-auto flex-col text-base/7 text-gray-900">
+                                    <p class="flex-auto">
+                                        Et quod quaerat dolorem quaerat architecto aliquam accusantium. Ex adipisci et doloremque autem quia quam. Quis eos molestiae at iure impedit.
+                                    </p>
+                                    <p class="mt-6">
+                                        <a href="#" class="text-sm/6 font-semibold text-red-800">Learn more <span aria-hidden="true">→</span></a>
+                                    </p>
+                                </dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+
+                <!-- Featured content section -->
+                <div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
+                    <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
+                        <h2 class="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">Curated content</h2>
+                        <p class="mt-6 text-lg/8 text-gray-600">Not sure where to begin? Here are some articles we think you will like.</p>
+                    </div>
+                    <div class="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                        <article class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pt-80 pb-8 sm:pt-48 lg:pt-80">
+                            <img src="images/photos/7.jpg" alt="" class="absolute inset-0 -z-10 size-full object-cover" />
+                            <div class="absolute inset-0 -z-10 bg-linear-to-t from-gray-900 via-gray-900/40"></div>
+                            <div class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-gray-900/10 ring-inset"></div>
+
+                            <div class="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm/6 text-gray-300">
+                                <time datetime="2020-03-16" class="mr-8">18 April 2025</time>
+                            </div>
+                            <h3 class="mt-3 text-lg/6 font-semibold text-white">
+                                <a href="#">
+                                    <span class="absolute inset-0"></span>
+                                    Vel expedita assumenda placeat aut nisi optio voluptates quas
+                                </a>
+                            </h3>
+                        </article>
+                        <article class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pt-80 pb-8 sm:pt-48 lg:pt-80">
+                            <img src="images/photos/13.jpg" alt="" class="absolute inset-0 -z-10 size-full object-cover" />
+                            <div class="absolute inset-0 -z-10 bg-linear-to-t from-gray-900 via-gray-900/40"></div>
+                            <div class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-gray-900/10 ring-inset"></div>
+
+                            <div class="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm/6 text-gray-300">
+                                <time datetime="2020-03-16" class="mr-8">18 April 2025</time>
+                            </div>
+                            <h3 class="mt-3 text-lg/6 font-semibold text-white">
+                                <a href="#">
+                                    <span class="absolute inset-0"></span>
+                                    Vel expedita assumenda placeat aut nisi optio voluptates quas
+                                </a>
+                            </h3>
+                        </article>
+                        <article class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pt-80 pb-8 sm:pt-48 lg:pt-80">
+                            <img src="images/photos/3.jpg" alt="" class="absolute inset-0 -z-10 size-full object-cover" />
+                            <div class="absolute inset-0 -z-10 bg-linear-to-t from-gray-900 via-gray-900/40"></div>
+                            <div class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-gray-900/10 ring-inset"></div>
+
+                            <div class="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm/6 text-gray-300">
+                                <time datetime="2020-03-16" class="mr-8">18 April 2025</time>
+                            </div>
+                            <h3 class="mt-3 text-lg/6 font-semibold text-white">
+                                <a href="#">
+                                    <span class="absolute inset-0"></span>
+                                    Vel expedita assumenda placeat aut nisi optio voluptates quas
+                                </a>
+                            </h3>
+                        </article>
+
+                        <!-- More posts... -->
+                    </div>
+                </div>
+            </main>
+
+            <!-- Footer -->
+            <footer class="mt-16 sm:mt-32">
+                <div class="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
+                    <nav class="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm/6" aria-label="Footer">
+                        <a href="#" class="text-gray-600 hover:text-gray-900">About</a>
+                        <a href="#" class="text-gray-600 hover:text-gray-900">Accessibility</a>
+                        <a href="#" class="text-gray-600 hover:text-gray-900">Links</a>
+                    </nav>
+                    <p class="mt-20 mb-0 text-center text-sm/6 text-gray-600">&copy; Lincolnshire Brick. All rights reserved.</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

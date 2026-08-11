@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html class="h-full bg-gray-100">
+    <head>
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="./output.css" rel="stylesheet" />
+        <style type="text/tailwindcss">
+            @theme {
+                --font-sans: InterVariable, sans-serif;
+            }
+        </style>
+    </head>
+    <body class="h-full">
+        
+        <div class="flex min-h-full flex-col">
+            <header class="absolute inset-x-0 top-0 z-50  border-b border-gray-200">
+                <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+                    <div class="flex lg:flex-1">
+                        <a href="#" class="-m-1.5 p-1.5">
+                            <span class="sr-only">Lincolnshire Brick</span>
+                            <img class="h-8 w-auto fill-amber-700" src="images/brick-logo.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="flex lg:hidden">
+                        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="hidden lg:flex lg:gap-x-12">
+                        <a href="#" class="text-sm/6 font-semibold text-gray-900">Brickyards</a>
+                        <a href="#" class="text-sm/6 font-semibold text-gray-900">Brickmakers</a>
+                        <a href="#" class="text-sm/6 font-semibold text-gray-900">Buildings</a>
+                        <a href="#" class="text-sm/6 font-semibold text-gray-900">Media Library</a>
+                        <a href="#" class="text-sm/6 font-semibold text-gray-900">Machinery</a>
+                        <a href="#" class="text-sm/6 font-semibold text-gray-900">Documents</a>
+                    </div>
+                    <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                        <!-- Mini search -->
+                    </div>
+                </nav>
+                <!-- Mobile menu, show/hide based on menu open state. -->
+                <div class="lg:hidden" role="dialog" aria-modal="true">
+                    <!-- Background backdrop, show/hide based on slide-over state. -->
+                    <div class="fixed inset-0 z-50"></div>
+                    <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                        <div class="flex items-center justify-between">
+                            <a href="#" class="-m-1.5 p-1.5">
+                                <span class="sr-only">Your Company</span>
+                                <img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+                            </a>
+                            <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                                <span class="sr-only">Close menu</span>
+                                <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="mt-6 flow-root">
+                            <div class="-my-6 divide-y divide-gray-500/10">
+                                <div class="space-y-2 py-6">
+                                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Product</a>
+                                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Features</a>
+                                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Resources</a>
+                                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Company</a>
+                                </div>
+                                <div class="py-6">
+                                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log in</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+          
+            <div class="mx-auto flex w-full max-w-7xl items-start gap-x-8 px-4 py-10 sm:px-6 lg:px-8 mt-10">
+              <aside class="sticky top-8 hidden w-60 shrink-0 lg:block
+               overflow-y-auto border-r border-gray-200 px-4 py-6 pt-0 sm:px-6 lg:px-8 lg:pl-0 lg:pt-0 xl:block
+               max-h-[calc(100vh_-_98px)] border-b-[#ddd] border-b border-solid 
+              ">
+                <!-- Left column area -->
+                 
+                <nav class="h-full" aria-label="Directory">
+  <div class="relative">
+    <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+      <h3>A</h3>
+    </div>
+    <ul role="list" class="divide-y divide-gray-100">
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Airey, William</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Alcock, E</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Alcock, H</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Alcock, Henry Weston</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Allen, W</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Alock, W</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Andrew, T</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Annison, ES</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Arliss & Co</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Arliss, Edward</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Armes, E & Son</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Armes, Edward</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Armes, Thomas</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Armes, W</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Armes-Edward, Ernest</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Armes-Rawden, Edward</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Armes-Rawden, George</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Armes_Rawden, Ernest & Sons</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Ashley & Son</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Askey, Charles</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Atkinson, J</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Axholme Brick Co Ltd</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="relative">
+    <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+      <h3>B</h3>
+    </div>
+    <ul role="list" class="divide-y divide-gray-100">
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Bacon, G</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Bailey, George</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Baker & Hunt</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Baker, T</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Bancroft, Edward</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Bancroft, G & W</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Bancroft, George</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Bancroft, J & G</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Bancroft, William</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Banks, H</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Banks, J</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Barlow, S</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Barnard, J</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Barraclough, Jas</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Barrat, William</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Barrow Tileries</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Bavin, John</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Bedford, F</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Bellamy, John</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Bellamy, N P</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Bellwood, George Archer</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Bellwood, Robert</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Best, William Bartholomew</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Betts, W</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Binsell, Joseph</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Blackwell & Middleton</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Blanchard & Robinson</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Blyth, G G</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Blyth, W</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Blyth, William</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Blythe, W</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Boston Brick & Tile Co</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Boultham, William</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Bourne Brick & Tile Co Ltd</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Bowers, M Mrs</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Boyce, William</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Bracebridge Brick & Tile Co Ltd</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Bradford, W</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Brett, Chas</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Briggs F & Co</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Briggs, J</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Briggs, John William & Richard</p>
+        </div>
+      </li>
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900"><a class="hover:underline" href="brickmaker-detail.html">Brocklebank, J</a></p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="relative">
+    <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+      <h3>E</h3>
+    </div>
+    <ul role="list" class="divide-y divide-gray-100">
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Tricker, James</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="relative">
+    <div class="sticky top-0 z-10 border-y border-t-gray-100 border-b-gray-200 bg-gray-50 px-3 py-1.5 text-sm/6 font-semibold text-gray-900">
+      <h3>T</h3>
+    </div>
+    <ul role="list" class="divide-y divide-gray-100">
+  
+      <li class="flex gap-x-4 px-3 py-2">
+        <div class="min-w-0">
+          <p class="text-sm/6 font-semibold text-gray-900">Tricker, James</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+                  </nav>
+                  
+
+              </aside>
+          
+              <main class="flex-1 px-4 py-6 sm:px-6 lg:px-8 lg:pl-0">
+                <!-- Main area -->
+                <div class="bg-white py-24 sm:py-32">
+                    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                      <div class="mx-auto max-w-2xl lg:mx-0">
+                        <h2 class="text-5xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Brocklebank, J</h2>
+                        <p class="my-5 mb-10">1850 &ndash; 1904</p>
+                      </div>
+
+
+
+                      <div class="divide-y divide-gray-200 overflow-hidden rounded-lg bg-gray-200 shadow-sm sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0">
+                        <div class="group relative rounded-tl-lg rounded-tr-lg bg-white p-6 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-inset sm:rounded-tr-none">
+                          <div class="mt-8">
+                            <h3 class="text-base font-semibold text-gray-900 mb-3">
+                              <a href="#" class="focus:outline-hidden">
+                                <!-- Extend touch target to entire panel -->
+                                Brickyards
+                              </a>
+                            </h3>
+                            
+                            
+                            <div class="truncate text-sm font-medium text-red-700 hover:underline mb-1"><a href="brickyard-detail.html" class="hover:underline">Donington on Bain</a></div>
+                            <div class="truncate text-sm font-medium text-red-700 hover:underline">Wragby</div>
+
+
+                          </div>
+                        </div>
+                        <div class="group relative bg-white p-6 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-inset sm:rounded-tr-lg">
+                          <div class="mt-8">
+                            <h3 class="text-base font-semibold text-gray-900 mb-3">
+                              <a href="#" class="focus:outline-hidden">
+                                <!-- Extend touch target to entire panel -->
+                                Areas known
+                              </a>
+                            </h3>
+                            
+                            <div class="truncate text-sm font-medium text-red-700 hover:underline"><a href="town-detail.html">Louth</a></div>
+
+                          </div>
+                        </div>
+                        <div class="group relative bg-white p-6 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-inset">
+                          <div class="mt-8">
+                            <h3 class="text-base font-semibold text-gray-900 mb-3">
+                              <a href="#" class="focus:outline-hidden">
+                                <!-- Extend touch target to entire panel -->
+                                <span class="absolute inset-0" aria-hidden="true"></span>
+                                Notes
+                              </a>
+                            </h3>
+                            <p class="mt-2 text-sm text-gray-500">Any notes about this brickmaker would go here.</p>
+                          </div>
+                        </div>
+                        <div class="group relative bg-white p-6 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-inset">
+                          <div class="mt-8">
+                            &nbsp;
+                          </div>
+                        </div>
+                      </div>
+                      
+
+
+
+                    </div>
+                  </div>
+                  
+
+
+
+                  
+                
+
+              </main>
+        
+            </div>
+          </div>
+          
+
+
+            <!-- Footer -->
+            <footer class="mt-16 sm:mt-32">
+                <div class="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
+                    <nav class="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm/6" aria-label="Footer">
+                        <a href="#" class="text-gray-600 hover:text-gray-900">About</a>
+                        <a href="#" class="text-gray-600 hover:text-gray-900">Accessibility</a>
+                        <a href="#" class="text-gray-600 hover:text-gray-900">Links</a>
+                    </nav>
+                    <p class="mt-20 mb-0 text-center text-sm/6 text-gray-600">&copy; Lincolnshire Brick. All rights reserved.</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
